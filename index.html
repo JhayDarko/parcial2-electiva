@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú con Barra Lateral</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="home">
+        <div class="logo">Ctrl+Hire</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+    <div id="overlay" class="overlay"></div>
+    <aside id="sidebar" class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about-me"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#footer"><i class="fas fa-share-alt"></i> Social Media</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+    </aside>
+    <main>
+        <section class="section" id="about-me">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="card">
+                <div class="card-content">
+                    <p>I am a passionate developer with experience in JavaScript, HTML, and CSS. I enjoy creating
+                        intuitive and user-friendly web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Version Control</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="card">
+                <div class="card-content">
+                    <p>I have worked on various projects, including building a 2D Pokémon battle simulator, web
+                        applications, and more. I have hands-on experience with frontend and backend development.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </footer>
+    </main>
+    <script src="src/js/scripts.js"></script>
+</body>
+
+</html>

@@ -4,6 +4,7 @@ const overlay = document.getElementById('overlay');
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 const body = document.body;
+const downloadBtn = document.getElementById('download-cv');
 
 menuToggle.addEventListener('click', () => {
     const isOpen = sidebar.classList.contains('open');
@@ -34,3 +35,11 @@ function toggleTheme() {
 }
 
 themeToggle.addEventListener('click', toggleTheme);
+
+downloadBtn.addEventListener('click', () => {
+    const cvLink = '../assest/Jhojander-CV.pdf';
+    const link = document.createElement('a');
+    link.href = cvLink;
+    link.download = '../assest/Jhojander-CV.pdf';
+    link.click();
+});

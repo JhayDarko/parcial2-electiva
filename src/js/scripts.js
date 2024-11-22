@@ -37,9 +37,12 @@ function toggleTheme() {
 themeToggle.addEventListener('click', toggleTheme);
 
 downloadBtn.addEventListener('click', () => {
-    const cvLink = '../assest/Jhojander-CV.pdf';
+    const cvLink = '/src/assets/Jhojander-CV.pdf';
     const link = document.createElement('a');
     link.href = cvLink;
-    link.download = '../assest/Jhojander-CV.pdf';
+    link.download = 'Jhojander-CV.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
 });
+
